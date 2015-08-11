@@ -42,7 +42,8 @@ class MPCHandler: NSObject, MCSessionDelegate {
     
     
     func session(session: MCSession!, peer peerID: MCPeerID!, didChangeState state: MCSessionState) {
-        let userInfo = ["peerID":peerID,"state":state.rawValue]
+        let userInfo:[String:AnyObject] = ["peerID":peerID, "state":state.rawValue]
+        
         dispatch_async(dispatch_get_main_queue(), { () -> Void in
             NSNotificationCenter.defaultCenter().postNotificationName("MPC_DidChangeStateNotification", object: nil, userInfo: userInfo)
         })
@@ -50,9 +51,10 @@ class MPCHandler: NSObject, MCSessionDelegate {
     }
     
     func session(session: MCSession!, didReceiveData data: NSData!, fromPeer peerID: MCPeerID!) {
-        let userInfo = ["data":data, "peerID":peerID]
+        let data:[String : AnyObject] = ["data":data, "peerID":peerID]
+        
         dispatch_async(dispatch_get_main_queue(), { () -> Void in
-            NSNotificationCenter.defaultCenter().postNotificationName("MPC_DidReceiveDataNotification", object: nil, userInfo: userInfo)
+            NSNotificationCenter.defaultCenter().postNotificationName("MPC_DidReceiveDataNotification", object: nil, userInfo: data)
         })
         
     }
