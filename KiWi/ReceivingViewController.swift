@@ -60,8 +60,9 @@ class ReceivingViewController: UIViewController, CBPeripheralManagerDelegate {
     */
     
     func handleReceivedDataWithNotification(notification: NSNotification){
-        let receivedDataDictionary = notification.userInfo as! Dictionary<String, AnyObject>
-        let data = receivedDataDictionary["data"] as! NSData
+        
+        let data = notification.userInfo!["wifiInfo"] as! NSData
+        
         
         // take data out data variable and connect to the wifi with it...
         let wifiData = NSKeyedUnarchiver.unarchiveObjectWithData(data) as! Dictionary<String, String>
@@ -70,6 +71,4 @@ class ReceivingViewController: UIViewController, CBPeripheralManagerDelegate {
         
     }
     
-    
-
 }

@@ -31,7 +31,6 @@ class SendingViewController: UIViewController, MCBrowserViewControllerDelegate, 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     
     // binded to the Find button
@@ -102,20 +101,23 @@ class SendingViewController: UIViewController, MCBrowserViewControllerDelegate, 
     func peerChangedStateWithNotification(notification: NSNotification){
         // when a connection is made it will send the wifi information to the peer
         
-        let state = notification.userInfo!["state"] as! MCSessionState
+        let state = notification.userInfo!["state"] as! Int
+        
+        println("this is the state")
         println(state)
-        if state == MCSessionState.Connected{
-            
+        
+        if state == MCSessionState.Connected.rawValue{
             
             // now we will send the data over to the users
             let connectedPeers = self.appDelegate.mpcHandler.session.connectedPeers
-           
+            println(connectedPeers) 
             if let ssid = self.getNetworkName()
             {
-                let password = Keychain.get(ssid)
-                let wifiData = ["ssid":ssid, "password":password] as! NSData
+                let wifiDictionary: [String:NSString!] = ["ssid":ssid, "password":"Test"]
+                let wifiData :NSData = NSKeyedArchiver.archivedDataWithRootObject(wifiDictionary)
                 
                 self.appDelegate.mpcHandler.session.sendData(wifiData, toPeers: connectedPeers, withMode: MCSessionSendDataMode.Reliable, error: nil)
+
             }
 
         }
