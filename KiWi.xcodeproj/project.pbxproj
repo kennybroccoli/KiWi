@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		E84CDA051B728F8000F25386 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E84CDA041B728F8000F25386 /* Security.framework */; };
 		E84CDA071B72928900F25386 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84CDA061B72928900F25386 /* Keychain.swift */; };
-		E85DECE71B7534D300B59F11 /* ReceivingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85DECE61B7534D300B59F11 /* ReceivingViewController.swift */; };
+		E8FBA9F51B7999220051FE0D /* ReceivingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FBA9F41B7999220051FE0D /* ReceivingViewController.swift */; };
 		F03EE4FA1B5576D80041E6B9 /* SendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03EE4F91B5576D80041E6B9 /* SendingViewController.swift */; };
 		F0D532641B54E5E800996BA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D532631B54E5E800996BA7 /* AppDelegate.swift */; };
 		F0D532661B54E5E800996BA7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D532651B54E5E800996BA7 /* ViewController.swift */; };
@@ -33,7 +33,7 @@
 /* Begin PBXFileReference section */
 		E84CDA041B728F8000F25386 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		E84CDA061B72928900F25386 /* Keychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
-		E85DECE61B7534D300B59F11 /* ReceivingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReceivingViewController.swift; path = ../../../../.Trash/ReceivingViewController.swift; sourceTree = "<group>"; };
+		E8FBA9F41B7999220051FE0D /* ReceivingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceivingViewController.swift; sourceTree = "<group>"; };
 		F03EE4F91B5576D80041E6B9 /* SendingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendingViewController.swift; sourceTree = "<group>"; };
 		F0D5325E1B54E5E800996BA7 /* KiWi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KiWi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0D532621B54E5E800996BA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -91,7 +91,7 @@
 			children = (
 				F0D532631B54E5E800996BA7 /* AppDelegate.swift */,
 				F0D532651B54E5E800996BA7 /* ViewController.swift */,
-				E85DECE61B7534D300B59F11 /* ReceivingViewController.swift */,
+				E8FBA9F41B7999220051FE0D /* ReceivingViewController.swift */,
 				F0D532671B54E5E800996BA7 /* Main.storyboard */,
 				F03EE4F91B5576D80041E6B9 /* SendingViewController.swift */,
 				F0DD9B901B5501D400718EA1 /* MPCHandler.swift */,
@@ -233,8 +233,8 @@
 				F03EE4FA1B5576D80041E6B9 /* SendingViewController.swift in Sources */,
 				F0D532641B54E5E800996BA7 /* AppDelegate.swift in Sources */,
 				F0DD9B911B5501D400718EA1 /* MPCHandler.swift in Sources */,
+				E8FBA9F51B7999220051FE0D /* ReceivingViewController.swift in Sources */,
 				E84CDA071B72928900F25386 /* Keychain.swift in Sources */,
-				E85DECE71B7534D300B59F11 /* ReceivingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
