@@ -17,6 +17,7 @@
 		F0D5326B1B54E5E800996BA7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0D5326A1B54E5E800996BA7 /* Images.xcassets */; };
 		F0D5326E1B54E5E800996BA7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0D5326C1B54E5E800996BA7 /* LaunchScreen.xib */; };
 		F0D5327A1B54E5E800996BA7 /* KiWiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D532791B54E5E800996BA7 /* KiWiTests.swift */; };
+		F0D591011B8ECE4D00E18093 /* EnterPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D591001B8ECE4D00E18093 /* EnterPassViewController.swift */; };
 		F0DD9B911B5501D400718EA1 /* MPCHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DD9B901B5501D400718EA1 /* MPCHandler.swift */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,7 @@
 		F0D532731B54E5E800996BA7 /* KiWiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KiWiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0D532781B54E5E800996BA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0D532791B54E5E800996BA7 /* KiWiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KiWiTests.swift; sourceTree = "<group>"; };
+		F0D591001B8ECE4D00E18093 /* EnterPassViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterPassViewController.swift; sourceTree = "<group>"; };
 		F0DD9B901B5501D400718EA1 /* MPCHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MPCHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,6 +93,7 @@
 			children = (
 				F0D532631B54E5E800996BA7 /* AppDelegate.swift */,
 				F0D532651B54E5E800996BA7 /* ViewController.swift */,
+				F0D591001B8ECE4D00E18093 /* EnterPassViewController.swift */,
 				E8FBA9F41B7999220051FE0D /* ReceivingViewController.swift */,
 				F0D532671B54E5E800996BA7 /* Main.storyboard */,
 				F03EE4F91B5576D80041E6B9 /* SendingViewController.swift */,
@@ -231,6 +234,7 @@
 			files = (
 				F0D532661B54E5E800996BA7 /* ViewController.swift in Sources */,
 				F03EE4FA1B5576D80041E6B9 /* SendingViewController.swift in Sources */,
+				F0D591011B8ECE4D00E18093 /* EnterPassViewController.swift in Sources */,
 				F0D532641B54E5E800996BA7 /* AppDelegate.swift in Sources */,
 				F0DD9B911B5501D400718EA1 /* MPCHandler.swift in Sources */,
 				E8FBA9F51B7999220051FE0D /* ReceivingViewController.swift in Sources */,

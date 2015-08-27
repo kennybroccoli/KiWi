@@ -92,7 +92,7 @@ class SendingViewController: UIViewController, MCBrowserViewControllerDelegate, 
             let interfacesArray = interfaces.takeRetainedValue() as! [String]
             if let unsafeInterfaceData = CNCopyCurrentNetworkInfo(interfacesArray[0] as String) {
                 let interfaceData = unsafeInterfaceData.takeRetainedValue() as Dictionary
-                return interfaceData["SSID"] as! String
+                return interfaceData["SSID"] as? String
             }
         }
         return nil
