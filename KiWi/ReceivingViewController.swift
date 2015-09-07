@@ -16,7 +16,6 @@ class ReceivingViewController: UIViewController, CBPeripheralManagerDelegate {
     var appDelegate:AppDelegate!
     var CBPManager: CBPeripheralManager!
 
-
     override func viewDidLoad() {
         super.viewDidLoad()
         CBPManager = CBPeripheralManager(delegate:self, queue:nil)
