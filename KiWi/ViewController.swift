@@ -36,7 +36,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func getNetworkName() -> String? {
+    internal func getNetworkName() -> String? {
         // return the network name or nil
         // code works on device not on simulator.... that is dumb
         
@@ -44,7 +44,7 @@ class ViewController: UIViewController {
             let interfacesArray = interfaces.takeRetainedValue() as! [String]
             if let unsafeInterfaceData = CNCopyCurrentNetworkInfo(interfacesArray[0] as String) {
                 let interfaceData = unsafeInterfaceData.takeRetainedValue() as Dictionary
-                return interfaceData["SSID"] as! String
+                return (interfaceData["SSID"] as! String)
             }
         }
         return nil
