@@ -14,11 +14,11 @@ class EnterPassViewController: UIViewController {
 
     @IBOutlet var enteredPassword: UITextField!
     let networkName = ViewController().getNetworkName()! as String
-    let password = enteredPassword.text
+   // let password = enteredPassword.text
     
     @IBAction func savePassword(sender: UIButton) {
         
-        Keychain.set(networkName, value: password)
+        Keychain.set(networkName, value: enteredPassword.text)
         
     }
     
