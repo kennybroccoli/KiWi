@@ -12,6 +12,8 @@ import SystemConfiguration.CaptiveNetwork
 class ViewController: UIViewController {
 
     @IBOutlet weak private var networkLabel: UILabel!
+
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,11 +23,9 @@ class ViewController: UIViewController {
         if let networkName = self.getNetworkName()
         {
             self.networkLabel.text = networkName
-            println(Keychain.get(networkName))
         }
         else
         {
-            println(Keychain.get("WBJWL"))
             self.networkLabel.text = "Unavailable"
         }
         

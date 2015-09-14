@@ -24,15 +24,25 @@ class EnterPassViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        if Keychain.get(networkName) != nil {
-            
-            self.view.hidden = true
-            self.performSegueWithIdentifier("savePassword", sender: self)
-            
-        }
+//
+//        if Keychain.get(networkName) != nil {
+//            
+//            self.view.hidden = true
+//            self.performSegueWithIdentifier("savingPassword", sender: self)
+//            
+//        }
         
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(true)
+        
+        if Keychain.get(networkName) != nil {
+            self.view.hidden = true
+            self.performSegueWithIdentifier("savingPassword", sender: self)
+        }
+
     }
 
     override func didReceiveMemoryWarning() {

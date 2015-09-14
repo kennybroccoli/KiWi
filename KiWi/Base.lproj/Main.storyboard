@@ -32,7 +32,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="UFQ-ik-Bdn" kind="show" id="g1c-Cz-Wqu"/>
+                                            <segue destination="UFQ-ik-Bdn" kind="show" id="5lw-ig-jPc"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="D5g-kO-Niy" style="IBUITableViewCellStyleDefault" id="2fr-ON-274">
@@ -70,7 +70,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DbK-oE-cDO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-945" y="247"/>
+            <point key="canvasLocation" x="-806" y="477"/>
         </scene>
         <!--Sending View Controller-->
         <scene sceneID="s0O-Ke-lwn">
@@ -80,7 +80,7 @@
                         <viewControllerLayoutGuide type="top" id="I13-RU-Wj7"/>
                         <viewControllerLayoutGuide type="bottom" id="HHO-fY-hQw"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="l0c-Fa-SGT">
+                    <view key="view" contentMode="scaleToFill" id="l0c-Fa-SGT" customClass="SendingView">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -95,7 +95,7 @@
                                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="tfD-I1-Lg8">
                                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <connections>
-                                                <segue destination="UFQ-ik-Bdn" kind="show" id="cBH-eI-CUK"/>
+                                                <segue destination="bp0-ML-dZ0" kind="show" id="79J-eC-j4r"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -136,7 +136,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oe2-Fh-qXz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-206" y="-164"/>
+            <point key="canvasLocation" x="-442" y="-258"/>
         </scene>
         <!--Receiving View Controller-->
         <scene sceneID="4zr-c3-F4T">
@@ -188,7 +188,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xnw-dV-yxH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-498" y="558"/>
+            <point key="canvasLocation" x="-1330" y="343"/>
         </scene>
         <!--Enter Pass View Controller-->
         <scene sceneID="WLh-pq-uzd">
@@ -202,7 +202,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="awW-nb-YIL">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="awW-nb-YIL">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <color key="barTintColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <textAttributes key="titleTextAttributes">
@@ -219,25 +219,25 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Enter Password For: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iyc-hw-02Z">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Password For: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iyc-hw-02Z">
                                 <rect key="frame" x="80" y="103" width="160" height="29"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3z3-Nj-nrE">
-                                <rect key="frame" x="109" y="241" width="103" height="41"/>
+                                <rect key="frame" x="109" y="250" width="103" height="41"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="18"/>
                                 <state key="normal" title="Save">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="savePassword:" destination="UFQ-ik-Bdn" eventType="touchUpInside" id="KZT-bd-O7R"/>
-                                    <segue destination="5aN-fa-hGZ" kind="show" id="hmM-xE-CZg"/>
+                                    <segue destination="5aN-fa-hGZ" kind="show" identifier="savingPassword" id="hmM-xE-CZg"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="iE4-m1-DkF">
-                                <rect key="frame" x="64" y="174" width="192" height="30"/>
+                                <rect key="frame" x="64" y="173" width="192" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -268,7 +268,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xy0-op-PiT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-571" y="-329"/>
+            <point key="canvasLocation" x="-329" y="477"/>
         </scene>
         <!--Home-->
         <scene sceneID="SzZ-0W-BzA">
@@ -282,13 +282,13 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KiWi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9jY-PV-9O5">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="KiWi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9jY-PV-9O5">
                                 <rect key="frame" x="104" y="28" width="112" height="72"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="45"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5aJ-kG-NdZ">
+                            <containerView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5aJ-kG-NdZ">
                                 <rect key="frame" x="40" y="225" width="240" height="88"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="88" id="3J7-gW-gOj"/>
@@ -303,8 +303,8 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Network:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FUc-eW-mOu">
-                                <rect key="frame" x="16" y="137" width="288" height="32"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Network:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FUc-eW-mOu">
+                                <rect key="frame" x="-72" y="137" width="288" height="32"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -334,11 +334,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HQt-t1-mm0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1318" y="-128"/>
+            <point key="canvasLocation" x="-828" y="-258"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="cBH-eI-CUK"/>
-        <segue reference="wxO-uf-AUC"/>
+        <segue reference="79J-eC-j4r"/>
     </inferredMetricsTieBreakers>
 </document>
